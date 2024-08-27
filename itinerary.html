@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary</title>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary</title>
+    <style>
+        /* Existing CSS code */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+        }
+        .date-group {
+            margin-bottom: 30px;
+        }
+        .date-header {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        .item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .item div {
+            flex: 1 1 50%; /* Each item takes up 50% width by default */
+            margin-bottom: 10px;
+        }
+        .item div:last-child {
+            margin-bottom: 0;
+        }
+        .map-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .map-link:hover {
+            text-decoration: underline;
+        }
+        .category {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .note {
+            font-style: italic;
+            color: #666;
+        }
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            .item div {
+                flex: 1 1 100%; /* On small screens, each item takes up 100% width */
+            }
+        }
+        /* Hidden content styles */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ICELAND</h1>
+
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">NaT</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> nan</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> 88839.49107618553</div>
+        <div><strong>Map:</strong> <a href="nan" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> 0.0</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-05 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> TPE->AMS </div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">transport</span></div>
+        <div><strong>Itinerary:</strong> Cathy</div>
+        <div><strong>Price (TWD):</strong> 33900.0</div>
+        <div><strong>Map:</strong> <a href="nan" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1UOW5uxWkihWV1P12LMcCBe9v2V6CN3I&ehbc=2E312F" width="640" height="480"></iframe>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> nan</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">neces.t</span></div>
+        <div><strong>Itinerary:</strong> 漫遊</div>
+        <div><strong>Price (TWD):</strong> 499.0</div>
+        <div><strong>Map:</strong> <a href="nan" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-06 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> AMS->KEF</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">transport</span></div>
+        <div><strong>Itinerary:</strong> AMS KEF PLAY 9/6 12:30</div>
+        <div><strong>Price (TWD):</strong> 5818.58715473</div>
+        <div><strong>Map:</strong> <a href="nan" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> nan</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">stay</span></div>
+        <div><strong>Itinerary:</strong> 客可思</div>
+        <div><strong>Price (TWD):</strong> 2748.65773567</div>
+        <div><strong>Map:</strong> <a href="<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1UOW5uxWkihWV1P12LMcCBe9v2V6CN3I&ehbc=2E312F" width="640" height="480"></iframe>" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-07 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> Hvammstangi</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">stay</span></div>
+        <div><strong>Itinerary:</strong> Bessastaoir Guesthouse</div>
+        <div><strong>Price (TWD):</strong> 1440.0110786614</div>
+        <div><strong>Map:</strong> <a href="Bessastaðir gistiheimili" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Rent Car</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">transport</span></div>
+        <div><strong>Itinerary:</strong> Hyundai Tucson (4WD)</div>
+        <div><strong>Price (TWD):</strong> 3672.2</div>
+        <div><strong>Map:</strong> <a href="Keflavík International Airport (KEF)" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Ytri Tunga 海豹沙灘</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Ytri Tunga Beach Parking" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Kirkjufell 教會山</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Kirkjufell" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> 0</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-08 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> Myvatn</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">stay</span></div>
+        <div><strong>Itinerary:</strong> Hotel Laxa</div>
+        <div><strong>Price (TWD):</strong> 4119.41691813399</div>
+        <div><strong>Map:</strong> <a href="Laxá Hótel" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Viti 火口湖</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Viti Crater (Krafla) Parking" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Hverfjall 惠爾火山</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Hverfjall Volcano Trail" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Lava field Dimmuborqir 黑色城堡</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Dimmuborgir" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> 0</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-09 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> Neskaupstadur</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">stay</span></div>
+        <div><strong>Itinerary:</strong> Hildibrand Hotel</div>
+        <div><strong>Price (TWD):</strong> 2084.696256664</div>
+        <div><strong>Map:</strong> <a href="Hildibrand Hotel" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Namafjall Hverir火山地熱谷</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Námafjall Hverir Viewpoint" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Hafnarhólmi 東鳥</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Borgarfjarðarhöfn" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> 塞濟斯菲厄澤 小鎮</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Seyðisfjarðarkirkja" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> 0</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-10 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> Hofn</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">stay</span></div>
+        <div><strong>Itinerary:</strong> REY STAY</div>
+        <div><strong>Price (TWD):</strong> 4176.53188407</div>
+        <div><strong>Map:</strong> <a href="REY Stays" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Klifbrekku Waterfall 七層瀑布</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Klifbrekku Waterfall" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Vestrahorn蝙蝠山</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Vestrahorn" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Jokulsarlon 杰古沙龍冰河湖</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">tour</span></div>
+        <div><strong>Itinerary:</strong> 35min 遊船</div>
+        <div><strong>Price (TWD):</strong> 1564.23900092</div>
+        <div><strong>Map:</strong> <a href="Jökulsárlón" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> nan</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-11 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> Hofn</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">stay</span></div>
+        <div><strong>Itinerary:</strong> Arctic Exclusive Ranch</div>
+        <div><strong>Price (TWD):</strong> 2671.3485496352</div>
+        <div><strong>Map:</strong> <a href="Arctic Exclusive Ranch" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Mulagljufur Canyon</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Mulagljufur Canyon" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Blue Ice Cave</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">tour</span></div>
+        <div><strong>Itinerary:</strong> Crystal Blue Ice Cave - Super Jeep from Jökulsárlón | Tröll Expeditions (troll.is)</div>
+        <div><strong>Price (TWD):</strong> 4984.59</div>
+        <div><strong>Map:</strong> <a href="Jökulsárlón Main Parking" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> 0</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-12 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> Bruarfoss</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">stay</span></div>
+        <div><strong>Itinerary:</strong> Kviholmi apartment</div>
+        <div><strong>Price (TWD):</strong> 2762.936477154</div>
+        <div><strong>Map:</strong> <a href="Gljásteinn by Golden circle" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Skaftafell Glacier
+斯卡夫塔冰川健行（9/12)</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">tour</span></div>
+        <div><strong>Itinerary:</strong> 斯卡夫塔山國家公園：冰川徒步</div>
+        <div><strong>Price (TWD):</strong> 3495.6035</div>
+        <div><strong>Map:</strong> <a href="Skaftafellsstofa" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Geysir間歇噴泉</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Geysir Centre" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Gullfoss古佛斯瀑布</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Gullfoss Falls" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> nan</div>
+        <div><strong>Paid:</strong> 0.0</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Katla Ice Cave" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-13 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> Rekjavik</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">stay</span></div>
+        <div><strong>Itinerary:</strong> Gljasteinn by golden circle</div>
+        <div><strong>Price (TWD):</strong> 2035.57738595904</div>
+        <div><strong>Map:</strong> <a href="Grey Apartments Vesturgata" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Kerio</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Sky Lagoon</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">tour</span></div>
+        <div><strong>Itinerary:</strong> Sky Lagoon</div>
+        <div><strong>Price (TWD):</strong> 2632.71435481991</div>
+        <div><strong>Map:</strong> <a href="Sky Lagoon" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> Hallgrimskirkja 哈爾格林姆教堂</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="Hallgrimskirkja" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <div class="date-group">
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-14 00:00:00</div>
+        <div class="items hidden">
+            
+    <div class="item">
+        <div><strong>ITEM:</strong> 0</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">stay</span></div>
+        <div><strong>Itinerary:</strong> Grey Apartments</div>
+        <div><strong>Price (TWD):</strong> 2884.305779768</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> nan</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> 0</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> 0</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> 0</div>
+        <div><strong>Paid:</strong> nan</div>
+        <div><strong>Category:</strong> <span class="category">nan</span></div>
+        <div><strong>Itinerary:</strong> nan</div>
+        <div><strong>Price (TWD):</strong> nan</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+    <div class="item">
+        <div><strong>ITEM:</strong> KEF->LHR</div>
+        <div><strong>Paid:</strong> 1.0</div>
+        <div><strong>Category:</strong> <span class="category">transport</span></div>
+        <div><strong>Itinerary:</strong> icelandairline</div>
+        <div><strong>Price (TWD):</strong> 7349.075</div>
+        <div><strong>Map:</strong> <a href="0" class="map-link" target="_blank">View Map</a></div>
+        <div><strong>Distance:</strong> nan</div>
+        <div><strong>Contact:</strong> nan</div>
+        <div><strong>Food:</strong> nan</div>
+        <div><strong>Packings:</strong> nan</div>
+        <div><strong>Transport:</strong> nan</div>
+        <div><strong>Note:</strong> <span class="note">nan</span></div>
+        <div><strong>Weather:</strong> nan</div>
+    </div>
+    
+        </div>
+    </div>
+    
+    </div>
+
+    <script>
+        function toggleVisibility(element) {
+            const items = element.nextElementSibling;
+            if (items.classList.contains('hidden')) {
+                items.classList.remove('hidden');
+            } else {
+                items.classList.add('hidden');
+            }
+        }
+    </script>
+    
+</body>
+</html>
