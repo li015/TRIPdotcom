@@ -39,22 +39,37 @@ h1 {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #dddddd00;
+    border-radius: 5px;
+    background-color: #f9f9f900;
+    align-items: flex-start;
+
+}
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #dddddd00;
+    border-radius: 15px;
+    background-color: #f9f9f92d;
+}
 /* Category-specific background colors */
 .category-transport {
     background-color: #d1e7dd;
 }
-.category-food {
+.category-stay {
     background-color: #fde2e2;
 }
-.category-accommodation {
+.category-tour {
     background-color: #fff3cd;
 }
-.category-entertainment {
-    background-color: #e2e3e5;
-}
-.category-shopping {
-    background-color: #cfe2ff;
-}
+ 
 .item div {
     flex: 1 1 50%;
     margin-bottom: 10px;
