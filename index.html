@@ -4,88 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Itinerary</title>
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Itinerary</title>
-    <style>
-        /* Existing CSS code */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            font-size: 24px;
-        }
-        .date-group {
-            margin-bottom: 30px;
-        }
-        .date-header {
-            font-size: 20px;
-            font-weight: bold;
-            color: #333;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            cursor: pointer;
-        }
-        .item {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .item div {
-            flex: 1 1 50%; /* Each item takes up 50% width by default */
-            margin-bottom: 10px;
-        }
-        .item div:last-child {
-            margin-bottom: 0;
-        }
-        .map-link {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .map-link:hover {
-            text-decoration: underline;
-        }
-        .category {
-            font-weight: bold;
-            color: #007bff;
-        }
-        .note {
-            font-style: italic;
-            color: #666;
-        }
-        /* Responsive Styles */
-        @media only screen and (max-width: 768px) {
-            .item div {
-                flex: 1 1 100%; /* On small screens, each item takes up 100% width */
-            }
-        }
-        /* Hidden content styles */
-        .hidden {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
     <div class="container">
@@ -97,7 +17,7 @@
             
     <div class="item">
         
-        <div><strong>Price (TWD):</strong> 86036</div>
+        <div><strong>Budget:</strong> 86036</div>
         
         <div><strong>Weather:</strong></div>
         <script type="text/javascript" src="http://vedur.is/js/iframe.js"></script>
@@ -108,6 +28,7 @@
         VI.ifrm.displayWeather();
         //-->
         </script>
+        
         <div><strong>Map:</strong></div>
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1UOW5uxWkihWV1P12LMcCBe9v2V6CN3I&ehbc=2E312F" width="640" height="480"></iframe>
 
@@ -117,512 +38,422 @@
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-05  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-05 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> TPE->AMS </div>
-        <div><strong>Category:</strong> <span class="category">transport</span></div>
-        <div><strong>Description:</strong> Cathy</div>
-        <div><strong>Price (TWD):</strong> 33900.0</div>
+     <div class="item category-transport">
+        <div style="font-size: 12px;"><strong> 00:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> TPE->AMS </strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Cathy</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= https://drive.google.com/file/d/19kZDZocNJ5O32zsfE3NRxBKWH8KiDeqw/view?usp=drive_link class="file-link" target="_blank">file</a></div>
-    </div>
-    
-    <div class="item">
-        <div><strong>Itinerary:</strong> nan</div>
-        <div><strong>Category:</strong> <span class="category">neces.t</span></div>
-        <div><strong>Description:</strong> 漫遊</div>
-        <div><strong>Price (TWD):</strong> 499.0</div>
-        <div><strong>Note:</strong> <span class="note">nan</span></div>
-        <div><strong>Contact:</strong> nan</div>
-        <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= nan class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-06  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-06 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> AMS->KEF</div>
-        <div><strong>Category:</strong> <span class="category">transport</span></div>
-        <div><strong>Description:</strong> AMS KEF PLAY 9/6 12:30</div>
-        <div><strong>Price (TWD):</strong> 5812.83428</div>
+     <div class="item category-transport">
+        <div style="font-size: 12px;"><strong> 02:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> AMS->KEF</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> AMS KEF PLAY 9/6 12:30</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= nan class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Rekjavik</div>
-        <div><strong>Category:</strong> <span class="category">stay</span></div>
-        <div><strong>Description:</strong> 客可思</div>
-        <div><strong>Price (TWD):</strong> 2745.94012</div>
+     <div class="item category-stay">
+        <div style="font-size: 12px;"><strong> 03:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Rekjavik</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> 客可思</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
-    </div>
-    
-    <div class="item">
-        <div><strong>Itinerary:</strong> nan</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
-        <div><strong>Note:</strong> <span class="note">nan</span></div>
-        <div><strong>Contact:</strong> nan</div>
-        <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= nan class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-07  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-07 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> Rent Car</div>
-        <div><strong>Category:</strong> <span class="category">transport</span></div>
-        <div><strong>Description:</strong> Hyundai Tucson (4WD)</div>
-        <div><strong>Price (TWD):</strong> 3672.2</div>
+     <div class="item category-transport">
+        <div style="font-size: 12px;"><strong> 05:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Rent Car</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Hyundai Tucson (4WD)</strong> </div> 
         <div><strong>Note:</strong> <span class="note">Hyundai Tucson (4WD) >>> RentalCover買保險</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Keflavík International Airport (KEF) class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Ytri Tunga 海豹沙灘</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 06:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Ytri Tunga 海豹沙灘</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">0</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Ytri Tunga Beach Parking class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Kirkjufell 教會山</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 07:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Kirkjufell 教會山</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">貌似可爬</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Kirkjufell class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Hvammstangi</div>
-        <div><strong>Category:</strong> <span class="category">stay</span></div>
-        <div><strong>Description:</strong> Bessastaoir Guesthouse</div>
-        <div><strong>Price (TWD):</strong> 1438.5873304</div>
+     <div class="item category-stay">
+        <div style="font-size: 12px;"><strong> 08:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Hvammstangi</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Bessastaoir Guesthouse</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Bessastaðir gistiheimili class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-08  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-08 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> nan</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
-        <div><strong>Note:</strong> <span class="note">nan</span></div>
-        <div><strong>Contact:</strong> nan</div>
-        <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
-    </div>
-    
-    <div class="item">
-        <div><strong>Itinerary:</strong> Viti 火口湖</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 10:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Viti 火口湖</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">walk around the rim, which takes about an hour, or go further down to the water, extending the hike to about 2 hours</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Viti Crater (Krafla) Parking class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Hverfjall 惠爾火山</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 11:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Hverfjall 惠爾火山</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">Full Circle: The total hike time is approximately 1 hour and 30 minutes to 1 hour and 45 minutes, including the ascent and descent.
 Sunrise Hike: This guided hike takes around 2.5 to 3 hours, including hotel pickup and the hike itself.</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Hverfjall Volcano Trail class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Lava field Dimmuborqir 黑色城堡</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 12:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Lava field Dimmuborqir 黑色城堡</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">0</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Dimmuborgir class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Myvatn</div>
-        <div><strong>Category:</strong> <span class="category">stay</span></div>
-        <div><strong>Description:</strong> Hotel Laxa</div>
-        <div><strong>Price (TWD):</strong> 4115.344024</div>
+     <div class="item category-stay">
+        <div style="font-size: 12px;"><strong> 13:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Myvatn</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Hotel Laxa</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Laxá Hótel class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-09  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-09 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> nan</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
-        <div><strong>Note:</strong> <span class="note">nan</span></div>
-        <div><strong>Contact:</strong> nan</div>
-        <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
-    </div>
-    
-    <div class="item">
-        <div><strong>Itinerary:</strong> Namafjall Hverir火山地熱谷</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 15:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Namafjall Hverir火山地熱谷</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">0</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Námafjall Hverir Viewpoint class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Hafnarhólmi 東鳥</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 16:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Hafnarhólmi 東鳥</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">9月看運氣</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Borgarfjarðarhöfn class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> 塞濟斯菲厄澤 小鎮</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 17:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> 塞濟斯菲厄澤 小鎮</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">can have lunch here</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Seyðisfjarðarkirkja class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Neskaupstadur</div>
-        <div><strong>Category:</strong> <span class="category">stay</span></div>
-        <div><strong>Description:</strong> Hildibrand Hotel</div>
-        <div><strong>Price (TWD):</strong> 2082.635104</div>
+     <div class="item category-stay">
+        <div style="font-size: 12px;"><strong> 18:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Neskaupstadur</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Hildibrand Hotel</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Hildibrand Hotel class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-10  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-10 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> nan</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
-        <div><strong>Note:</strong> <span class="note">nan</span></div>
-        <div><strong>Contact:</strong> nan</div>
-        <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
-    </div>
-    
-    <div class="item">
-        <div><strong>Itinerary:</strong> Klifbrekku Waterfall 七層瀑布</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 20:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Klifbrekku Waterfall 七層瀑布</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">沿途風景美</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Klifbrekku Waterfall class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Vestrahorn蝙蝠山</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 21:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Vestrahorn蝙蝠山</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">will pass through</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Vestrahorn class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Jokulsarlon 杰古沙龍冰河湖</div>
-        <div><strong>Category:</strong> <span class="category">tour</span></div>
-        <div><strong>Description:</strong> 35min 遊船</div>
-        <div><strong>Price (TWD):</strong> 1563.07882021</div>
+     <div class="item category-tour">
+        <div style="font-size: 12px;"><strong> 22:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Jokulsarlon 杰古沙龍冰河湖</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> 35min 遊船</strong> </div> 
         <div><strong>Note:</strong> <span class="note">可預約遊船(35min) Check-in is 20 minutes (16:00-16:35) https://jokulsarlon.is/booking/</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Jökulsárlón class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Hofn</div>
-        <div><strong>Category:</strong> <span class="category">stay</span></div>
-        <div><strong>Description:</strong> REY STAY</div>
-        <div><strong>Price (TWD):</strong> 4172.40252</div>
+     <div class="item category-stay">
+        <div style="font-size: 12px;"><strong> 23:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Hofn</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> REY STAY</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= REY Stays class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-11  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-11 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> nan</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
-        <div><strong>Note:</strong> <span class="note">nan</span></div>
-        <div><strong>Contact:</strong> nan</div>
-        <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
-    </div>
-    
-    <div class="item">
-        <div><strong>Itinerary:</strong> Mulagljufur Canyon</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 01:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Mulagljufur Canyon</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">The total roundtrip hike distance extends for about 5.77 km </span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Mulagljufur Canyon class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Blue Ice Cave</div>
-        <div><strong>Category:</strong> <span class="category">tour</span></div>
-        <div><strong>Description:</strong> Crystal Blue Ice Cave - Super Jeep from Jökulsárlón | Tröll Expeditions (troll.is)</div>
-        <div><strong>Price (TWD):</strong> 4981.9848</div>
+     <div class="item category-tour">
+        <div style="font-size: 12px;"><strong> 02:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Blue Ice Cave</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Crystal Blue Ice Cave - Super Jeep from Jökulsárlón | Tröll Expeditions (troll.is)</strong> </div> 
         <div><strong>Note:</strong> <span class="note">20 minutes before the departure time  https://troll.is/ice-caves-in-iceland/ice-cave-tours/crystal-blue-ice-cave/?gad_source=1&gclid=CjwKCAjwiaa2BhAiEiwAQBgyHgXEmvCis4Vl-Nag2Mjou8_KALhx3M_Pp7wnc2p8mccdyokjxbLodBoCpikQAvD_BwE</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Jökulsárlón Main Parking class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Hofn</div>
-        <div><strong>Category:</strong> <span class="category">stay</span></div>
-        <div><strong>Description:</strong> Arctic Exclusive Ranch</div>
-        <div><strong>Price (TWD):</strong> 2668.70737005714</div>
+     <div class="item category-stay">
+        <div style="font-size: 12px;"><strong> 03:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Hofn</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Arctic Exclusive Ranch</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Arctic Exclusive Ranch class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-12  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-12 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> nan</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
-        <div><strong>Note:</strong> <span class="note">nan</span></div>
-        <div><strong>Contact:</strong> nan</div>
-        <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
-    </div>
-    
-    <div class="item">
-        <div><strong>Itinerary:</strong> Skaftafell Glacier
-斯卡夫塔冰川健行（9/12)</div>
-        <div><strong>Category:</strong> <span class="category">tour</span></div>
-        <div><strong>Description:</strong> 斯卡夫塔山國家公園：冰川徒步</div>
-        <div><strong>Price (TWD):</strong> 3493.77652</div>
+     <div class="item category-tour">
+        <div style="font-size: 12px;"><strong> 05:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Skaftafell Glacier
+斯卡夫塔冰川健行（9/12)</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> 斯卡夫塔山國家公園：冰川徒步</strong> </div> 
         <div><strong>Note:</strong> <span class="note">tour (9:00 am)</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Skaftafellsstofa class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Geysir間歇噴泉</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 06:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Geysir間歇噴泉</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">0</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Geysir Centre class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Gullfoss古佛斯瀑布</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 07:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Gullfoss古佛斯瀑布</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">0</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Gullfoss Falls class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Bruarfoss</div>
-        <div><strong>Category:</strong> <span class="category">stay</span></div>
-        <div><strong>Description:</strong> Gljasteinn by golden circle</div>
-        <div><strong>Price (TWD):</strong> 2033.56479744</div>
+     <div class="item category-stay">
+        <div style="font-size: 12px;"><strong> 08:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Bruarfoss</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Gljasteinn by golden circle</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Gljásteinn by Golden circle class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-13  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-13 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> nan</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 10:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Kerio</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= 0 class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Kerio</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
-        <div><strong>Note:</strong> <span class="note">nan</span></div>
-        <div><strong>Contact:</strong> nan</div>
-        <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
-    </div>
-    
-    <div class="item">
-        <div><strong>Itinerary:</strong> Sky Lagoon</div>
-        <div><strong>Category:</strong> <span class="category">tour</span></div>
-        <div><strong>Description:</strong> Sky Lagoon</div>
-        <div><strong>Price (TWD):</strong> 2630.11137312</div>
+     <div class="item category-tour">
+        <div style="font-size: 12px;"><strong> 11:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Sky Lagoon</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Sky Lagoon</strong> </div> 
         <div><strong>Note:</strong> <span class="note">訂了 19:00</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Sky Lagoon class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Hallgrimskirkja 哈爾格林姆教堂</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 12:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Hallgrimskirkja 哈爾格林姆教堂</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Hallgrimskirkja class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> Rekjavik</div>
-        <div><strong>Category:</strong> <span class="category">stay</span></div>
-        <div><strong>Description:</strong> Grey Apartments</div>
-        <div><strong>Price (TWD):</strong> 2881.454048</div>
+     <div class="item category-stay">
+        <div style="font-size: 12px;"><strong> 13:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> Rekjavik</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> Grey Apartments</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= Grey Apartments Vesturgata class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>
     </div>
     
     <div class="date-group">
-        <div class="date-header" onclick="toggleVisibility(this)">2024-09-14  </div>
+        <div class="date-header" onclick="toggleVisibility(this)">2024-09-14 </div>
         <div class="items hidden">
             
-    <div class="item">
-        <div><strong>Itinerary:</strong> 0</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 14:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> 0</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= 0 class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> nan</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 16:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> 0</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= 0 class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> 0</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 17:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> 0</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= 0 class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> 0</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item ">
+        <div style="font-size: 12px;"><strong> 18:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> 0</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> nan</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= 0 class="map-link" target="_blank">link</a></div>
     </div>
     
-    <div class="item">
-        <div><strong>Itinerary:</strong> 0</div>
-        <div><strong>Category:</strong> <span class="category">nan</span></div>
-        <div><strong>Description:</strong> nan</div>
-        <div><strong>Price (TWD):</strong> nan</div>
+     <div class="item category-transport">
+        <div style="font-size: 12px;"><strong> 19:00:00</strong> </div>
+        <div style="font-size: 28px; font-weight: bold;"><strong> KEF->LHR</strong> </div>
+        <div style="font-size: 16px; font-weight: bold;"><strong> icelandairline</strong> </div> 
         <div><strong>Note:</strong> <span class="note">nan</span></div>
         <div><strong>Contact:</strong> nan</div>
         <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
-    </div>
-    
-    <div class="item">
-        <div><strong>Itinerary:</strong> KEF->LHR</div>
-        <div><strong>Category:</strong> <span class="category">transport</span></div>
-        <div><strong>Description:</strong> icelandairline</div>
-        <div><strong>Price (TWD):</strong> 7345.234</div>
-        <div><strong>Note:</strong> <span class="note">nan</span></div>
-        <div><strong>Contact:</strong> nan</div>
-        <div><strong>Attachment:</strong> <a href= nan class="file-link" target="_blank">file</a></div>
+        <div><strong>Map:</strong> <a href= 0 class="map-link" target="_blank">link</a></div>
     </div>
     
         </div>

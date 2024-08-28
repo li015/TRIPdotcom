@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+.date-group {
+    margin-bottom: 30px;
+}
+.date-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+/* Category-specific background colors */
+.category-transport {
+    background-color: #d1e7dd;
+}
+.category-food {
+    background-color: #fde2e2;
+}
+.category-accommodation {
+    background-color: #fff3cd;
+}
+.category-entertainment {
+    background-color: #e2e3e5;
+}
+.category-shopping {
+    background-color: #cfe2ff;
+}
+.item div {
+    flex: 1 1 50%;
+    margin-bottom: 10px;
+}
+.item div:last-child {
+    margin-bottom: 0;
+}
+.map-link {
+    color: #007bff;
+    text-decoration: none;
+}
+.map-link:hover {
+    text-decoration: underline;
+}
+.category {
+    font-weight: bold;
+    color: #007bff;
+}
+.note {
+    font-style: italic;
+    color: #666;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .item div {
+        flex: 1 1 100%;
+    }
+}
+/* Hidden content styles */
+.hidden {
+    display: none;
+}
