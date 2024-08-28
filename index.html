@@ -596,14 +596,44 @@ Sunrise Hike: This guided hike takes around 2.5 to 3 hours, including hotel pick
     </div>
     
         
-
+<!-- 
         <script type="text/javascript" src="http://vedur.is/js/iframe.js"></script>
         <script type="text/javascript"> 
         VI.ifrm.type = 'wel';
         VI.ifrm.area = 111;
         VI.ifrm.lang = 'en';
         VI.ifrm.displayWeather();
-         
+        </script> -->
+
+        <script type="text/javascript">
+            // 使用 HTTPS 加载外部脚本
+            const script = document.createElement('script');
+            script.src = 'http://vedur.is/js/iframe.js';
+            script.type = 'text/javascript';
+        
+            script.onload = function() {
+                // 设置 iframe 的类型、区域、语言等属性
+                VI.ifrm.type = 'wel';
+                VI.ifrm.area = 111;
+                VI.ifrm.lang = 'en';
+        
+                // 动态创建 iframe 元素
+                const iframe = document.createElement('iframe');
+                // iframe.src = VI.ifrm.getUrl();  // 假设 getUrl() 方法返回构建的 iframe URL
+                iframe.src = 'https://vedur.is/js/iframe.js';
+                iframe.width = '100%';
+                iframe.height = '360px';
+                iframe.frameBorder = '0';
+        
+                // 将 iframe 插入到指定的容器中
+                document.getElementById('date-group').appendChild(iframe);
+        
+                // 如果外部脚本没有提供 getUrl 方法，你可以手动构建 URL
+                // iframe.src = `https://vedur.is/...`;  // 根据实际 URL 构建
+            };
+        
+            // 将外部脚本添加到文档中
+            document.body.appendChild(script);
         </script>
 
         </div>
